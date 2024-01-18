@@ -1,0 +1,18 @@
+.app-component-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.app-component-container2 {
+  display: contents;
+}
+.app-component-container3 {
+  width: 100%;
+  height: 57px;
+}
+.app-component-container4 {
+  display: contents;
+}
