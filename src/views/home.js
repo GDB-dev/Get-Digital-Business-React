@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
@@ -41,10 +42,10 @@ const Home = (props) => {
           </p>
           <div className="home-container1">
             <button type="button" className="button">
-              <span className="home-text">
+              <Link to="/packages" className="home-navlink">
                 <span>See our packages</span>
                 <br></br>
-              </span>
+              </Link>
             </button>
             <div className="home-container2">
               <div className="home-container3">
@@ -64,7 +65,7 @@ const Home = (props) => {
                   <path d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"></path>
                 </svg>
               </div>
-              <span className="home-text3">5.0 rating on Google</span>
+              <span className="home-text2">5.0 rating on Google</span>
             </div>
           </div>
         </div>
@@ -155,7 +156,7 @@ const Home = (props) => {
               href="mailto:hello@getdigitalbusiness.co.uk?subject=Lets get digital!"
               className="home-link button"
             >
-              <span className="home-text4">Start a project</span>
+              <span className="home-text3">Start a project</span>
             </a>
           </div>
         </div>

@@ -49,13 +49,14 @@
   display: flex;
   align-items: center;
 }
-.home-text {
+.home-navlink {
   color: #f4f6ed;
   width: auto;
   padding-top: 0px;
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
+  text-decoration: none;
   background-color: #ea496e;
 }
 .home-container2 {
@@ -100,7 +101,7 @@
   width: 24px;
   height: 24px;
 }
-.home-text3 {
+.home-text2 {
   color: #f4f6ed;
   margin-top: var(--dl-space-space-halfunit);
 }
@@ -283,7 +284,7 @@
   text-decoration: none;
   background-color: #ea496e;
 }
-.home-text4 {
+.home-text3 {
   color: rgb(255, 255, 255);
 }
 .home-image1 {
@@ -417,7 +418,7 @@
     padding-right: 26px;
     padding-bottom: 18px;
   }
-  .home-text4 {
+  .home-text3 {
     font-style: normal;
     font-weight: 500;
   }
