@@ -24,3 +24,6 @@ steps:
   inputs:
     skip_app_build: true
     skip_api_build: true
+    azure_static_web_apps_api_token: 'ed6a2f0b2cb3823db0a76d2b0105e25857d159a63f1c202fad36ef356aef06273-7707a2ef-d2e4-4659-ad0f-89379c34d7cc003253313'
+    deployment_environment: 'dev'
+    production_branch: 'main'
