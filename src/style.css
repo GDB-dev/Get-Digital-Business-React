@@ -37,7 +37,7 @@
 .button {
   color: #F4F6ED;
   cursor: pointer;
-  padding: 20 28 20 28;
+  padding: 20px 28px 20px 28px;
   font-size: 20px;
   font-style: normal;
   transition: 0.3s;

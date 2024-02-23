@@ -55,7 +55,7 @@ const Packages = (props) => {
                 <svg viewBox="0 0 1024 1024" className="packages-icon">
                   <path d="M384 0l-384 512h384l-256 512 896-640h-512l384-384z"></path>
                 </svg>
-                <h2 className="packages-text06">Lightening fast</h2>
+                <h2 className="packages-text06">Lightning fast</h2>
                 <span className="packages-text07">
                   Our lightning-fast hosting ensures a superior user experience.
                 </span>
@@ -76,7 +76,7 @@ const Packages = (props) => {
                 <svg viewBox="0 0 1024 1024" className="packages-icon04">
                   <path d="M512 256q-34 0-60-26t-26-60 26-59 60-25 60 25 26 59-26 60-60 26zM874 256l22 86q-100 28-256 42v554h-86v-256h-84v256h-86v-554q-156-14-256-42l22-86q156 42 362 42t362-42z"></path>
                 </svg>
-                <h2 className="packages-text12">Accessible</h2>
+                <h2 className="packages-text12">Accessible to all</h2>
                 <span className="packages-text13">
                   Reach everyone. Our designs prioritise accessibility for an
                   inclusive online presence.
