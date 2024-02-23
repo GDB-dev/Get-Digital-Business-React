@@ -35,11 +35,15 @@
   --dl-space-space-oneandhalfunits: 24px;
 }
 .button {
+  color: #F4F6ED;
   cursor: pointer;
+  padding: 20 28 20 28;
+  font-size: 20px;
+  font-style: normal;
   transition: 0.3s;
-}
-.button:hover {
-  opacity: 0.5;
+  font-weight: 500;
+  border-radius: 56px;
+  background-color: #EA496E;
 }
 .input {
   color: var(--dl-color-gray-black);
@@ -81,9 +85,6 @@
   transition: 0.3s;
   font-weight: 500;
 }
-.nav-link:hover {
-  opacity: 0.5;
-}
 .tag {
   color: #151515;
   font-size: 20px;
@@ -109,9 +110,6 @@
   padding-bottom: var(--dl-space-space-halfunit);
   justify-content: center;
   border-bottom-width: 1px;
-}
-.link:hover {
-  opacity: 0.5;
 }
 .heading {
   color: #151515;
@@ -146,9 +144,6 @@
   justify-content: space-between;
   border-bottom-width: 1px;
 }
-.service:hover {
-  opacity: 0.5;
-}
 .social {
   color: rgb(21, 21, 21);
   cursor: pointer;
@@ -157,9 +152,6 @@
   transition: 0.3s;
   font-weight: 500;
   line-height: 24px;
-}
-.social:hover {
-  opacity: 0.5;
 }
 .cookie-banner {
   left: 0;
@@ -172,6 +164,26 @@
   background-color: var(--dl-color-gray-white);
 }
 
+.darken-image {
+  filter: brightness(50%);
+}
+
+.faq-item {
+  display: none;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+}
+.faq-accordion {
+  margin: auto;
+  max-width: 600;
+}
+
+.faq-label {
+  cursor: pointer;
+  display: block;
+  padding: 10;
+  background-color: #f4f4f4;
+}
 .Content {
   font-size: 16px;
   font-family: Noto Sans;

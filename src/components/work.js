@@ -9,19 +9,19 @@ import './work.css'
 const Work = (props) => {
   return (
     <div className="work-work">
-      <img alt="image" src={props.Image} className="work-image" />
+      <img alt="image" src={props.image} className="work-image" />
       <div className="work-details">
         <div className="work-header">
           <div className="work-heading">
-            <span className="work-text">{props.Title}</span>
+            <span className="work-text">{props.title}</span>
             <Link></Link>
           </div>
-          <span className="work-text1">{props.Description}</span>
+          <span className="work-text1">{props.description}</span>
         </div>
         <div className="work-tags">
           <Tag></Tag>
-          <Tag Tag="Strategy"></Tag>
-          <Tag Tag="Web Development"></Tag>
+          <Tag tag="Strategy"></Tag>
+          <Tag tag="Web Development"></Tag>
         </div>
       </div>
     </div>
@@ -29,16 +29,16 @@ const Work = (props) => {
 }
 
 Work.defaultProps = {
-  Image: '/work%20%231-1500w.png',
-  Description:
+  image: '/work%20%231-1500w.webp',
+  description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-  Title: 'MOTECH',
+  title: 'MOTECH',
 }
 
 Work.propTypes = {
-  Image: PropTypes.string,
-  Description: PropTypes.string,
-  Title: PropTypes.string,
+  image: PropTypes.string,
+  description: PropTypes.string,
+  title: PropTypes.string,
 }
 
 export default Work

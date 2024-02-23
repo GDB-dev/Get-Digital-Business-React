@@ -7,17 +7,17 @@ import './tag.css'
 const Tag = (props) => {
   return (
     <div className="tag-container">
-      <span className="tag-tag tag">{props.Tag}</span>
+      <span className="tag-tag tag">{props.tag}</span>
     </div>
   )
 }
 
 Tag.defaultProps = {
-  Tag: 'Branding',
+  tag: 'Branding',
 }
 
 Tag.propTypes = {
-  Tag: PropTypes.string,
+  tag: PropTypes.string,
 }
 
 export default Tag

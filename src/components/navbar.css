@@ -1,0 +1,315 @@
+.navbar-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.navbar-navbar {
+  width: 100%;
+  display: flex;
+  z-index: 100;
+  align-items: center;
+  flex-direction: column;
+  background-color: #212f65;
+}
+.navbar-navbar-interactive {
+  width: 100%;
+  display: flex;
+  max-width: 1280px;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+}
+.navbar-branding {
+  gap: var(--dl-space-space-halfunit);
+  width: var(--dl-size-size-xxlarge);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.navbar-logo {
+  width: 100%;
+  height: 50px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.navbar-logo:hover {
+  transform: rotate(360deg);
+}
+.navbar-items {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.navbar-links {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.navbar-text {
+  color: rgb(244, 246, 237);
+  opacity: 1;
+  transition: 0.3s;
+}
+.navbar-text:hover {
+  color: #ea496e;
+}
+.navbar-text:active {
+  color: #ea496e;
+}
+.navbar-link {
+  color: rgb(244, 246, 237);
+  transition: 0.3s;
+  text-decoration: none;
+}
+.navbar-link:hover {
+  color: #ea496e;
+}
+.navbar-link:active {
+  color: #ea496e;
+}
+.navbar-link1 {
+  color: rgb(244, 246, 237);
+  transition: 0.3s;
+  text-decoration: none;
+}
+.navbar-link1:hover {
+  color: #ea496e;
+}
+.navbar-link1:active {
+  color: #ea496e;
+}
+.navbar-link2 {
+  color: #f4f6ed;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.navbar-link2:hover {
+  color: #ea496e;
+}
+.navbar-link2:active {
+  color: #ea496e;
+}
+.navbar-burger-menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-button {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 56px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: 20px;
+  background-color: #235536;
+}
+.navbar-image {
+  width: 100px;
+  display: none;
+  object-fit: cover;
+}
+.navbar-text1 {
+  color: #ffffff;
+  display: flex;
+}
+.navbar-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 32px;
+  z-index: 100;
+  position: fixed;
+  transform: translateY(-100%);
+  transition: 0.5s;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #212f65;
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.navbar-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.navbar-branding1 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.navbar-logo1 {
+  width: 100%;
+  height: 50px;
+  object-fit: cover;
+}
+.navbar-menu-close {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-icon {
+  fill: var(--dl-color-gray-white);
+  width: 24px;
+  height: 24px;
+}
+.navbar-items1 {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.navbar-links1 {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.navbar-text2 {
+  align-self: center;
+}
+.navbar-link3 {
+  align-self: center;
+  text-decoration: none;
+}
+.navbar-link4 {
+  align-self: center;
+  text-decoration: none;
+}
+.navbar-link5 {
+  align-self: center;
+  text-decoration: none;
+}
+.navbar-button1 {
+  align-self: center;
+  background-color: #ea496e;
+}
+.navbar-text3 {
+  color: #ffffff;
+}
+
+
+
+@media(max-width: 1600px) {
+  .navbar-button1 {
+    background-color: #ea496e;
+  }
+}
+@media(max-width: 1200px) {
+  .navbar-button1 {
+    background-color: #ea496e;
+  }
+}
+@media(max-width: 991px) {
+  .navbar-navbar-interactive {
+    padding-top: var(--dl-space-space-unit);
+  }
+  .navbar-button {
+    padding-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .navbar-image {
+    width: 18px;
+    height: 18px;
+    display: flex;
+  }
+  .navbar-text1 {
+    display: none;
+  }
+  .navbar-button1 {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 40px;
+    background-color: #ea496e;
+  }
+  .navbar-text3 {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+  }
+}
+@media(max-width: 767px) {
+  .navbar-navbar-interactive {
+    padding-top: var(--dl-space-space-oneandhalfunits);
+  }
+  .navbar-logo {
+    width: var(--dl-size-size-xxlarge);
+    height: var(--dl-size-size-small);
+  }
+  .navbar-items {
+    display: none;
+  }
+  .navbar-burger-menu {
+    display: flex;
+  }
+  .navbar-button {
+    padding: 12px;
+    background-color: #ea496e;
+  }
+  .navbar-image {
+    width: 14px;
+    height: 14px;
+  }
+  .navbar-logo1 {
+    width: var(--dl-size-size-xxlarge);
+  }
+  .navbar-button1 {
+    background-color: #ea496e;
+  }
+}
+@media(max-width: 479px) {
+  .navbar-branding {
+    width: auto;
+  }
+  .navbar-logo {
+    width: 220px;
+    height: var(--dl-size-size-small);
+  }
+  .navbar-text {
+    color: #F4F6ED;
+  }
+  .navbar-link {
+    color: #F4F6ED;
+  }
+  .navbar-link1 {
+    color: #F4F6ED;
+  }
+  .navbar-link2 {
+    color: #F4F6ED;
+  }
+  .navbar-button {
+    background-color: #ea496e;
+  }
+  .navbar-mobile-menu {
+    padding: var(--dl-space-space-oneandhalfunits);
+    background-color: #212f65;
+  }
+  .navbar-logo1 {
+    width: 220PX;
+  }
+  .navbar-button1 {
+    background-color: #ea496e;
+  }
+}

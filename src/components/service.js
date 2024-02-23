@@ -7,23 +7,23 @@ import './service.css'
 const Service = (props) => {
   return (
     <div className={`service-service ${props.rootClassName} `}>
-      <h3 className="service-title">{props.Title}</h3>
-      <span className="service-description">{props.Description}</span>
+      <h3 className="service-title">{props.title}</h3>
+      <span className="service-description">{props.description}</span>
     </div>
   )
 }
 
 Service.defaultProps = {
-  Title: 'Branding',
+  title: 'Branding',
   rootClassName: '',
-  Description:
+  description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
 }
 
 Service.propTypes = {
-  Title: PropTypes.string,
+  title: PropTypes.string,
   rootClassName: PropTypes.string,
-  Description: PropTypes.string,
+  description: PropTypes.string,
 }
 
 export default Service

@@ -7,22 +7,22 @@ import './statistic.css'
 const Statistic = (props) => {
   return (
     <div className={`statistic-statistic ${props.rootClassName} `}>
-      <span className="statistic-sta">{props.Caption}</span>
-      <span className="statistic-sta1">{props.Value}</span>
+      <span className="statistic-sta">{props.caption}</span>
+      <span className="statistic-sta1">{props.value}</span>
     </div>
   )
 }
 
 Statistic.defaultProps = {
   rootClassName: '',
-  Value: '12',
-  Caption: 'Years of growth',
+  value: '12',
+  caption: 'Years of growth',
 }
 
 Statistic.propTypes = {
   rootClassName: PropTypes.string,
-  Value: PropTypes.string,
-  Caption: PropTypes.string,
+  value: PropTypes.string,
+  caption: PropTypes.string,
 }
 
 export default Statistic

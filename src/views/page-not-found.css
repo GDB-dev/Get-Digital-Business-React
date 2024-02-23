@@ -1,0 +1,37 @@
+.page-not-found-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #212f65;
+}
+.page-not-found-container1 {
+  flex: 0 0 auto;
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.page-not-found-text {
+  color: #F4F6ED;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.page-not-found-text3 {
+  color: #F4F6ED;
+}
+.page-not-found-link {
+  align-self: flex-start;
+  margin-top: var(--dl-space-space-twounits);
+  margin-bottom: var(--dl-space-space-twounits);
+  text-decoration: none;
+}
+@media(max-width: 479px) {
+  .page-not-found-text {
+    color: rgb(244, 246, 237);
+  }
+}
