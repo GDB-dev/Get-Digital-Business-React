@@ -42,7 +42,7 @@ stages:
       inputs:
         app_location: '/'
         output_location: '/'
-        azure_static_web_apps_api_token: $(deploymentToken)
+        azure_static_web_apps_api_token: $(variables.deploymentToken)
         deployment_environment: 'dev'
         production_branch: 'main'
 
@@ -65,8 +65,8 @@ stages:
             inputs:
               app_location: '/'
               output_location: '/'
-              azure_static_web_apps_api_token: $(deploymentToken)
-              deployment_environment: 'production'
+              azure_static_web_apps_api_token: $(variables.deploymentToken)
+              deployment_environment: 'Production'
               production_branch: 'main'
     # Manual approval required before deployment to production
     condition: succeeded()
