@@ -132,10 +132,9 @@ const Home = (props) => {
           <h2 className="home-text3 heading2">Contact us</h2>
           <form
             name="contact-form"
-            action="https://formspree.io/f/mnqenzdl"
             method="POST"
             enctype="application/x-www-form-urlencoded"
-            onsubmit="redirectToThankYouPage()"
+            action="https://formsubmit.co/hello@getdigitalbusiness.co.uk"
             className="home-form"
           >
             <label className="home-text4">Your Name</label>
@@ -169,7 +168,6 @@ const Home = (props) => {
             <button
               name="form-submit"
               type="submit"
-              action="https://formsubmit.co/hello@getdigitalbusiness.co.uk method=POST"
               className="home-button1 button"
             >
               Send your message

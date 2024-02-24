@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
@@ -22,25 +23,27 @@ const Footer = (props) => {
               <a href="#our-services" className="footer-link">
                 {props.text1}
               </a>
-              <span className="footer-text01">{props.text2}</span>
+              <Link to="/packages" className="footer-navlink">
+                {props.text2}
+              </Link>
             </div>
             <div className="footer-company-container">
-              <span className="footer-text02">{props.text5}</span>
+              <span className="footer-text01">{props.text5}</span>
               <a href="#about-us" className="footer-link1">
                 {props.text6}
               </a>
               <a href="#contact-us" className="footer-link2">
                 {props.text8}
               </a>
-              <span className="footer-text03">{props.text9}</span>
+              <span className="footer-text02">{props.text9}</span>
             </div>
           </div>
           <div className="footer-container2">
             <div className="footer-contact">
-              <span className="footer-text04">{props.text10}</span>
+              <span className="footer-text03">{props.text10}</span>
               <a
                 href="mailto:hello@getdigitalbusiness.co.uk?subject="
-                className="footer-text05"
+                className="footer-text04"
               >
                 {props.text11}
               </a>
@@ -49,7 +52,7 @@ const Footer = (props) => {
               </a>
             </div>
             <div className="footer-socials">
-              <span className="footer-text06">{props.text13}</span>
+              <span className="footer-text05">{props.text13}</span>
               <div className="footer-icon-group">
                 <svg
                   viewBox="0 0 950.8571428571428 1024"
@@ -84,7 +87,7 @@ const Footer = (props) => {
         </div>
       </div>
       <div className="footer-separator"></div>
-      <span className="footer-text07">
+      <span className="footer-text06">
         <span className="">
           © 2024 Get Digital Business, All Rights Reserved.
         </span>
