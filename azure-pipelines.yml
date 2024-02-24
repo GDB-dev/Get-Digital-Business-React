@@ -1,30 +1,73 @@
-# Node.js with React
-# Build a Node.js project that uses React.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
 trigger:
 - main
 
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+variables:
+  deploymentToken: 'your-api-token-here'
 
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
+stages:
+- stage: Build
+  displayName: Build stage
+  jobs:
+  - job: Build
+    displayName: Build job
+    steps:
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '10.x'
+      displayName: 'Install Node.js'
 
-- task: AzureStaticWebApp@0
-  inputs:
-    app_location: '/'
-    app_build_command: 'npm run build'
-    output_location: '/build'
-    azure_static_web_apps_api_token: $(deploymentToken)
-    deployment_environment: 'dev'
-    production_branch: 'main'
+    - script: |
+        npm install
+        npm run build
+      displayName: 'npm install and build'
+
+    - publish: $(Build.SourcesDirectory)/build
+      artifact: drop
+      displayName: 'Publish Artifact'
+
+- stage: Dev
+  displayName: Development stage
+  jobs:
+  - job: DeployDev
+    displayName: Deploy to dev
+    steps:
+    - download: current
+      artifact: drop
+      displayName: 'Download Build Artifacts'
+
+    - task: AzureStaticWebApp@0
+      inputs:
+        app_location: '/'
+        output_location: '/'
+        azure_static_web_apps_api_token: $(deploymentToken)
+        deployment_environment: 'dev'
+        production_branch: 'main'
+
+- stage: Prod
+  displayName: Production stage
+  dependsOn: Dev
+  jobs:
+  - deployment: DeployProd
+    displayName: Deploy to production
+    environment: 'Production'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - download: current
+            artifact: drop
+            displayName: 'Download Build Artifacts'
+
+          - task: AzureStaticWebApp@0
+            inputs:
+              app_location: '/'
+              output_location: '/'
+              azure_static_web_apps_api_token: $(deploymentToken)
+              deployment_environment: 'production'
+              production_branch: 'main'
+    # Manual approval required before deployment to production
+    condition: succeeded()
+    timeoutInMinutes: 1440 # Timeout for manual approval
