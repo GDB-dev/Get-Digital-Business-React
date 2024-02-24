@@ -127,46 +127,56 @@ const Home = (props) => {
           />
         </div>
       </div>
-      <footer className="home-contact-us">
-        <div id="contact-us" className="home-information">
-          <div className="home-details">
-            <div className="home-header4">
-              <div className="home-branding">
-                <img
-                  alt="get digital business logo"
-                  sizes="(min-width: 992px) 1200px, (min-width: 768px) 800px, 480px"
-                  src="/cropped-logo-no-background-2-1500w.webp"
-                  loading="lazy"
-                  srcSet="/cropped-logo-no-background-2-1500w.webp 1200w, /cropped-logo-no-background-2-tablet.webp 800w, /cropped-logo-no-background-2-mobile.webp 480w"
-                  className="home-logo"
-                />
-              </div>
-              <div className="home-location"></div>
-            </div>
-            <div className="home-location1">
-              <span className="home-caption">Let&apos;s talk</span>
-              <a
-                href="mailto:hello@getdigitalbusiness.co.uk?subject=Website Enquiry"
-                className="home-value"
-              >
-                hello@getdigitalbusiness.co.uk
-              </a>
-            </div>
-            <a
-              href="mailto:hello@getdigitalbusiness.co.uk?subject=Lets get digital!"
-              className="home-link button"
+      <section id="contact-us" className="home-contact-us">
+        <div className="home-contact-us-container">
+          <h2 className="home-text3 heading2">Contact us</h2>
+          <form
+            name="contact-form"
+            action="https://formspree.io/f/mnqenzdl"
+            method="POST"
+            enctype="application/x-www-form-urlencoded"
+            onsubmit="redirectToThankYouPage()"
+            className="home-form"
+          >
+            <label className="home-text4">Your Name</label>
+            <input
+              type="text"
+              name="Name"
+              required
+              placeholder="Your Name"
+              className="home-textinput input"
+            />
+            <label className="home-text5">Your Email</label>
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              className="home-textinput1 input"
+            />
+            <label className="home-text6">Subject</label>
+            <input
+              type="text"
+              name="Subject"
+              placeholder="Subject"
+              className="home-textinput2 input"
+            />
+            <label className="home-text7">Message</label>
+            <textarea
+              name="Message"
+              placeholder="Your Message"
+              className="home-textarea textarea"
+            ></textarea>
+            <button
+              name="form-submit"
+              type="submit"
+              action="https://formsubmit.co/hello@getdigitalbusiness.co.uk method=POST"
+              className="home-button1 button"
             >
-              <span className="home-text3">Start a project</span>
-            </a>
-          </div>
+              Send your message
+            </button>
+          </form>
         </div>
-        <img
-          alt="image"
-          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fHdlYnNpdGV8ZW58MHx8fHwxNjk5NzMxOTcxfDA&amp;ixlib=rb-4.0.3&amp;w=800"
-          loading="lazy"
-          className="home-image1"
-        />
-      </footer>
+      </section>
       <div className="home-footer-container">
         <Footer rootClassName="footer-root-class-name2"></Footer>
       </div>

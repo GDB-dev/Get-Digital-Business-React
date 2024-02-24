@@ -26,6 +26,7 @@
   --dl-space-space-halfunit: 8px;
   --dl-space-space-sixunits: 96px;
   --dl-space-space-twounits: 32px;
+  --dl-color-primary1-blue80: #2d7fc0ff;
   --dl-radius-radius-radius2: 2px;
   --dl-radius-radius-radius4: 4px;
   --dl-radius-radius-radius8: 8px;
@@ -184,6 +185,9 @@
   padding: 10;
   background-color: #f4f4f4;
 }
+.heading2 {
+  font-size: 2.5rem;
+}
 .Content {
   font-size: 16px;
   font-family: Noto Sans;
@@ -206,5 +210,9 @@
     line-height: 19px;
   }
 }
-
+@media(max-width: 767px) {
+  .heading2 {
+    font-size: 1.8rem;
+  }
+}
 
