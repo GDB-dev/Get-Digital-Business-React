@@ -25,6 +25,6 @@ steps:
     app_location: '/'
     app_build_command: 'npm run build'
     output_location: '/build'
-    azure_static_web_apps_api_token: ${{ deploymentToken }}
+    azure_static_web_apps_api_token: $(deploymentToken)
     deployment_environment: 'dev'
     production_branch: 'main'
