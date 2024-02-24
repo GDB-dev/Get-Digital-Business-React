@@ -4,9 +4,6 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-variables:
-  deploymentToken: 'your-api-token-here'
-
 stages:
 - stage: Build
   displayName: Build stage
@@ -24,7 +21,7 @@ stages:
         npm run build
       displayName: 'npm install and build'
 
-    - publish: $(Build.ArtifactStagingDirectory)/build
+    - publish: $(System.DefaultWorkingDirectory)/build
       artifact: drop
       displayName: 'Publish Artifact'
 
