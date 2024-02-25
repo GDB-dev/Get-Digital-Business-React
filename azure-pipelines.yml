@@ -4,7 +4,6 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-
 variables:
 - group: get-digital-business
 
