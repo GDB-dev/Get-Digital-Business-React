@@ -7,7 +7,7 @@ pool:
 variables:
 - group: get-digital-business
 
-#stages:
+stages:
 #- stage: Build
 #  displayName: Build stage
 #  jobs:
