@@ -50,12 +50,9 @@
   align-items: center;
   flex-direction: row;
 }
-.navbar-text {
-  color: rgb(244, 246, 237);
-  opacity: 1;
-}
 .navbar-link {
   color: rgb(244, 246, 237);
+  opacity: 1;
   text-decoration: none;
 }
 .navbar-link1 {
@@ -63,6 +60,10 @@
   text-decoration: none;
 }
 .navbar-link2 {
+  color: rgb(244, 246, 237);
+  text-decoration: none;
+}
+.navbar-link3 {
   color: #f4f6ed;
   text-decoration: none;
 }
@@ -87,7 +88,7 @@
   display: none;
   object-fit: cover;
 }
-.navbar-text1 {
+.navbar-text {
   color: #ffffff;
   display: flex;
 }
@@ -152,12 +153,8 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.navbar-text2 {
+.navbar-text1 {
   align-self: center;
-}
-.navbar-link3 {
-  align-self: center;
-  text-decoration: none;
 }
 .navbar-link4 {
   align-self: center;
@@ -167,11 +164,15 @@
   align-self: center;
   text-decoration: none;
 }
+.navbar-link6 {
+  align-self: center;
+  text-decoration: none;
+}
 .navbar-button1 {
   align-self: center;
   background-color: #ea496e;
 }
-.navbar-text3 {
+.navbar-text2 {
   color: #ffffff;
 }
 
@@ -202,7 +203,7 @@
     height: 18px;
     display: flex;
   }
-  .navbar-text1 {
+  .navbar-text {
     display: none;
   }
   .navbar-button1 {
@@ -212,7 +213,7 @@
     border-radius: 40px;
     background-color: #ea496e;
   }
-  .navbar-text3 {
+  .navbar-text2 {
     font-style: normal;
     font-weight: 500;
     line-height: 16px;
@@ -255,9 +256,6 @@
     width: 220px;
     height: var(--dl-size-size-small);
   }
-  .navbar-text {
-    color: #F4F6ED;
-  }
   .navbar-link {
     color: #F4F6ED;
   }
@@ -265,6 +263,9 @@
     color: #F4F6ED;
   }
   .navbar-link2 {
+    color: #F4F6ED;
+  }
+  .navbar-link3 {
     color: #F4F6ED;
   }
   .navbar-button {

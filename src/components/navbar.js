@@ -19,14 +19,26 @@ const Navbar = (props) => {
           </div>
           <div className="navbar-items">
             <div className="navbar-links">
-              <span className="navbar-text nav-link">{props.text}</span>
-              <a href="#our-services" className="navbar-link nav-link">
+              <a
+                href="https://getdigitalbusiness.co.uk/#hero"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="navbar-link nav-link"
+              >
+                {props.text}
+              </a>
+              <a href="#our-services" className="navbar-link1 nav-link">
                 {props.text1}
               </a>
-              <a href="#about-us" className="navbar-link1 nav-link">
+              <a href="#about-us" className="navbar-link2 nav-link">
                 {props.text21}
               </a>
-              <a href="#contact-us" className="navbar-link2 nav-link">
+              <a
+                href="https://getdigitalbusiness.co.uk/#contact-us"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="navbar-link3 nav-link"
+              >
                 {props.text3}
               </a>
             </div>
@@ -38,7 +50,7 @@ const Navbar = (props) => {
                 src={props.imageSrc}
                 className="navbar-image"
               />
-              <span className="navbar-text1">{props.text4}</span>
+              <span className="navbar-text">{props.text4}</span>
             </button>
           </div>
           <div data-thq="thq-mobile-menu" className="navbar-mobile-menu">
@@ -66,19 +78,19 @@ const Navbar = (props) => {
               </div>
               <div className="navbar-items1">
                 <div className="navbar-links1">
-                  <span className="navbar-text2 nav-link">{props.text2}</span>
-                  <a href="#our-services" className="navbar-link3 nav-link">
+                  <span className="navbar-text1 nav-link">{props.text2}</span>
+                  <a href="#our-services" className="navbar-link4 nav-link">
                     {props.text5}
                   </a>
-                  <a href="#about-us" className="navbar-link4 nav-link">
+                  <a href="#about-us" className="navbar-link5 nav-link">
                     {props.text6}
                   </a>
-                  <a href="#contact-us" className="navbar-link5 nav-link">
+                  <a href="#contact-us" className="navbar-link6 nav-link">
                     {props.text7}
                   </a>
                 </div>
                 <button className="navbar-button1 start-button button">
-                  <span className="navbar-text3">{props.text8}</span>
+                  <span className="navbar-text2">{props.text8}</span>
                 </button>
               </div>
             </div>
