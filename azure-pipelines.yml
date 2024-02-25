@@ -67,7 +67,6 @@ stages:
               app_location: '/'
               output_location: '/build'
               azure_static_web_apps_api_token: $(deploymentToken)
-              deployment_environment: 'Production'
               production_branch: 'main'
     # Manual approval required before deployment to production
     condition: succeeded()
