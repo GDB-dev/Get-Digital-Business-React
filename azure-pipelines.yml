@@ -4,6 +4,9 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+- group: get-digital-business
+
 stages:
 - stage: Build
   displayName: Build stage
@@ -39,7 +42,7 @@ stages:
       inputs:
         app_location: '/'
         output_location: '/'
-        azure_static_web_apps_api_token: $(variables.deploymentToken)
+        azure_static_web_apps_api_token: $(deploymentToken)
         deployment_environment: 'dev'
         production_branch: 'main'
 
@@ -62,7 +65,7 @@ stages:
             inputs:
               app_location: '/'
               output_location: '/'
-              azure_static_web_apps_api_token: $(variables.deploymentToken)
+              azure_static_web_apps_api_token: $(deploymentToken)
               deployment_environment: 'Production'
               production_branch: 'main'
     # Manual approval required before deployment to production
