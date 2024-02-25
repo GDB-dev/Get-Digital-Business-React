@@ -49,14 +49,15 @@ stages:
 - stage: Prod
   displayName: Production stage
   dependsOn: Dev
-  jobs:
-  - deployment: DeployProd
+  jobs: 
+  - job: DeployProd
+#    deployment: DeployProd
     displayName: Deploy to production
-    environment: 'Production'
-    strategy:
-      runOnce:
-        deploy:
-          steps:
+#    environment: 'Production'
+#    strategy:
+#      runOnce:
+#        deploy:
+    steps:
 #          - download: current
 #            artifact: drop
 #            displayName: 'Download Build Artifacts'
