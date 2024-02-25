@@ -21,32 +21,24 @@ const Navbar = (props) => {
             <div className="navbar-links">
               <a
                 href="https://getdigitalbusiness.co.uk/#hero"
-                target="_blank"
-                rel="noreferrer noopener"
                 className="navbar-link nav-link"
               >
                 {props.text}
               </a>
               <a
                 href="https://getdigitalbsuiness.co.uk/#services"
-                target="_blank"
-                rel="noreferrer noopener"
                 className="navbar-link1 nav-link"
               >
                 {props.text1}
               </a>
               <a
                 href="https://getdigitalbusiness.co.uk/about"
-                target="_blank"
-                rel="noreferrer noopener"
                 className="navbar-link2 nav-link"
               >
                 {props.text21}
               </a>
               <a
                 href="https://getdigitalbusiness.co.uk/#contact-us"
-                target="_blank"
-                rel="noreferrer noopener"
                 className="navbar-link3 nav-link"
               >
                 {props.text3}

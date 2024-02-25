@@ -137,14 +137,16 @@ const Packages = (props) => {
                   />
                 </span>
                 <span className="packages-text28">SSL Certificate</span>
+                <span className="packages-text29">Domain Name</span>
                 <button className="packages-button button">Learn More</button>
               </div>
               <div className="packages-container6">
-                <span className="packages-text29">Growth</span>
-                <span className="packages-text30">£169</span>
-                <span className="packages-text31">upto 10 page website</span>
-                <span className="packages-text32">Domain Name</span>
-                <span className="packages-text33">Security</span>
+                <span className="packages-text30">Growth</span>
+                <span className="packages-text31">£169</span>
+                <span className="packages-text32">No Setup Costs</span>
+                <span className="packages-text33">upto 10 page website</span>
+                <span className="packages-text34">SSL Certificate</span>
+                <span className="packages-text35">Domain Name</span>
                 <button className="packages-button1 button">Learn More</button>
               </div>
             </div>
@@ -154,6 +156,7 @@ const Packages = (props) => {
           </div>
         </div>
       </div>
+      <div className="packages-faq-container"></div>
       <div className="packages-footer-container">
         <Footer rootClassName="footer-root-class-name"></Footer>
       </div>
