@@ -25,7 +25,7 @@ stages:
         npm run build
       displayName: 'npm install and build'
 
-    - publish: '$(Build.SourcesDirectory)/build'
+    - publish: '$(Build.SourcesDirectory)'
       artifact: 'drop'
       displayName: 'Publish Artifact'
 
