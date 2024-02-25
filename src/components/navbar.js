@@ -27,10 +27,20 @@ const Navbar = (props) => {
               >
                 {props.text}
               </a>
-              <a href="#our-services" className="navbar-link1 nav-link">
+              <a
+                href="https://getdigitalbsuiness.co.uk/#services"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="navbar-link1 nav-link"
+              >
                 {props.text1}
               </a>
-              <a href="#about-us" className="navbar-link2 nav-link">
+              <a
+                href="https://getdigitalbusiness.co.uk/about"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="navbar-link2 nav-link"
+              >
                 {props.text21}
               </a>
               <a
