@@ -21,7 +21,7 @@ stages:
         npm run build
       displayName: 'npm install and build'
 
-    - publish: $(System.DefaultWorkingDirectory)/build
+    - publish: $(Build.ArtifactStagingDirectory)
       artifact: drop
       displayName: 'Publish Artifact'
 
